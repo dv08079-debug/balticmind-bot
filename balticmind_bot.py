@@ -17,7 +17,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import anthropic
 
 # ── НАСТРОЙКИ ──
-TELEGRAM_TOKEN = "8419467320:AAEvmUt_jYS_lEQDe5vSXYxQqOHw6Qeip5U"
+TELEGRAM_TOKEN = "8331411241:AAGJpj7iny8GTNs15RWS1yW3Q5bgQGQTvZA"
 ANTHROPIC_KEY  = "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"
 MANAGER_CHAT_ID = "8411091757"  # Куда пересылать горячие лиды
 
