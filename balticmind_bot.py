@@ -83,7 +83,7 @@ async def get_ai_response(user_id: int, user_message: str) -> str:
     
     try:
         response = client.messages.create(
-            model="claude-opus-4-6",
+            model="claude-3-5-haiku-20241022",
             max_tokens=1024,
             system=SYSTEM_PROMPT,
             messages=get_conversation(user_id)
