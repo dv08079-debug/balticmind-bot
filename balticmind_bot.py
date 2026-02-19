@@ -18,7 +18,7 @@ import anthropic
 
 # ── НАСТРОЙКИ ──
 TELEGRAM_TOKEN = "8419467320:AAEvmUt_jYS_lEQDe5vSXYxQqOHw6Qeip5U"
-ANTHROPIC_KEY  = "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"
+ANTHROPIC_KEY  = "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"
 MANAGER_CHAT_ID = "8411091757"  # Куда пересылать горячие лиды
 
 # ── СИСТЕМНЫЙ ПРОМПТ ──
@@ -83,7 +83,7 @@ async def get_ai_response(user_id: int, user_message: str) -> str:
     
     try:
         response = client.messages.create(
-            model="claude-3-5-haiku-latest",
+            model="claude-opus-4-6",
             max_tokens=1024,
             system=SYSTEM_PROMPT,
             messages=get_conversation(user_id)
@@ -222,5 +222,5 @@ def main():
     app.run_polling(allowed_updates=Update.ALL_TYPES)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
