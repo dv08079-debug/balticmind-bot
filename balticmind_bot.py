@@ -38,7 +38,7 @@ logger = logging.getLogger(__name__)
 # ────────────── CLAUDE CLIENT ──────────────
 client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
 
-MODEL = "claude-4-5-haiku-20251001"
+MODEL = "claude-sonnet-4-6"
 
 SYSTEM_PROMPT = """Ты — AI-ассистент компании BalticMind.
 Отвечай кратко, профессионально и на языке клиента.
